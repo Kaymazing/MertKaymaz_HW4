@@ -1,0 +1,28 @@
+﻿<Window x:Class="MertKaymaz_HW4.Courses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MertKaymaz_HW4"
+        mc:Ignorable="d"
+        Title="Courses" Loaded="Window_Loaded" Width="350">
+    <StackPanel Margin="10">
+        <Button Name="btnOpenStudents" Content="Students Tab" Click="btnOpenStudents_Click" Width="76" Height="30" HorizontalAlignment="Right" FontSize="11" FontWeight="Bold" />
+        <Label Content="Course Code (ex. CET301)" FontWeight="Bold"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseCode" Height="25"/>
+        <Label Content="Course Credit" FontWeight="Bold"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseCredit" Height="25"/>
+        <Label Content="Course Quota" FontWeight="Bold"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseQuota" Height="25" Margin="0,0,0,10"/>
+
+        <Button Content="Insert" Name="btnSave" Click="Button_Click" Width="200" Height="25" Margin="0,0,0,10" Background="#FF00F279" FontWeight="Bold"/>
+        <Button Content="Update" Name="btnUpdate" Click="btnUpdate_Click" Width="200" Height="25" Margin="0,0,0,10" Background="#FFC995D3" FontWeight="Bold"></Button>
+
+        <Button Content="Delete" Name="btnDelete" Click="btnDelete_Click" Width="200" Height="25" Margin="0,0,0,10" Background="#FFFF0202" FontWeight="Bold"></Button>
+
+        <DataGrid Name="dgCourses" SelectedCellsChanged="dgCourses_SelectedCellsChanged" Height="300"/>
+
+
+
+    </StackPanel>
+</Window>
